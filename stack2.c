@@ -1,7 +1,7 @@
-#include<bits/stdc++.h>
 #include<stdio.h>
 #include<stdlib.h>
 using namespace std;
+
 struct arraystack
 {
     int top;
@@ -47,30 +47,30 @@ int pop(struct arraystack *stack)
     else
     return (-1);
 }
- int main(){
+ main(){
      int choice,item;
     str arraystack *stack;
     stack=createstack(4);
 while (1)
 {
-    cout<<"1.Push"<<endl;
-    cout<<"2.Pop"<<endl;
-    cout<<"3.Exit"<<endl;
-    cout<<"Enter your choice"<<endl;
-    cin>>choice;
+    printf("1.Push"\n);
+     printf("2.Pop\n");
+    printf("3.Exit\n");
+    printf("Enter your choice"\n);
+    scanf("%d",&choice);
     switch (choice)
     {
     case 1:
-    cout<<"Enter the number\n";
-    cin>>item;
+    printf("Enter the number\n");
+    scanf("%d",&item);
     push(stack,item);
     break;
     case 2:
     item=pop(stack);
     if(item==-1)
-    cout<<"Stack is empty"<<endl;
+    printf("Stack is empty\n");
     else
-    cout<<"Popped value is"<<item<<endl;
+    printf("Popped value is" item);
     break;
     case 3:
     exit(0);
@@ -78,4 +78,3 @@ while (1)
    
 }
 }
-
